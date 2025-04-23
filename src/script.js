@@ -25,7 +25,7 @@ function startCountdown() {
 
 function showMessage() {
   const msg = document.getElementById("message");
-  msg.innerHTML = "Eu sei que errei... e estou aqui de coração aberto pra te pedir desculpas 😔<br><br>Você pode me perdoar?";
+  msg.innerHTML = "Eu sei que errei ontem... e estou aqui de coração aberto pra te pedir desculpas 😔<br><br>Você pode me perdoar?";
   msg.style.opacity = 1;
   document.getElementById("choices").style.display = "flex";
 }
