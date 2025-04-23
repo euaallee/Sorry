@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f7d9d9, #fceaea);
+    overflow: hidden;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  #emoji {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+  #button, .choice {
+    background-color: #ff7b7b;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+  }
+  #button:hover, .choice:hover {
+    background-color: #ff5252;
+  }
+  #message {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  #choices {
+    display: none;
+    margin-top: 20px;
+  }
+  #final-response {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  #countdown {
+    font-size: 2rem;
+    color: #a33;
+    display: none;
+    margin-top: 20px;
+  }
+
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: floatUp 4s linear infinite;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+  }
+
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0) rotate(45deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(45deg);
+      opacity: 0;
+    }
+  }
